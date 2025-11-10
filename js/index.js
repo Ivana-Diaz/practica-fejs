@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tarjeta.classList.add("tarjeta-producto");
 
         const imagen = document.createElement("img");
-        imagen.src = producto.imagen;
+        imagen.src = `./${producto.imagen}`;
         imagen.alt = producto.alt;
 
         const titulo = document.createElement("h3");
