@@ -4,7 +4,7 @@ import { actualizarContador } from "./ui.js";
 
 const renderizarCarrito = () => {
     const carrito = obtenerCarrito();
-    actualizarContador(carrito);
+    // actualizarContador(carrito);
 
     const contenedor = document.getElementById("contenedor-carrito");
     const divAcciones = document.getElementById("acciones-carrito");

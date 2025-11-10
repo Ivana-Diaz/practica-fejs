@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tarjetas = document.getElementById("productos");
 
     const carrito = obtenerCarrito();
-    actualizarContador();
+    // actualizarContador(carrito);
 
     productos.forEach((producto) => {
         const tarjeta = document.createElement("article");
