@@ -4,7 +4,7 @@ import { obtenerCarrito } from "./storage.js";
 import { actualizarContador } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const tarjetas = document.querySelector(".productos");
+    const tarjetas = document.getElementById("productos");
 
     const carrito = obtenerCarrito();
     actualizarContador();
