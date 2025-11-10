@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Tienda Blue - Home</title>
+    </head>
+    <body>
+        <header>
+            <!-- <img src="./img/logo.png" alt="Logo del sitio web" class="logo"> -->
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/carrito.html" class="carrito">Carrito: <span id="contador-carrito">0</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- acá también podría estar el <nav> -->
+        <main>
+           <h1>Tienda Blue</h1>
+           <h2>Ejercicio práctico clase 1</h2>
+            <p class="parrafo-home">Crea una section e incluye un párrafo de introducción, 
+                y utiliza <strong>negrita</strong>, <em>itálica</em>, y <s>tachado</s> 
+                dentro de los textos según sea necesario.</p>
+           <!-- <section>
+            <video width="200" height="200" controls>
+                <source src="./media/video.mp4" type="video/mp4" />
+                <track src="./media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" />
+            </video>
+           </section> -->
+           <section class="venta">
+            <h2>Algunos de nuestros productos</h2>
+            <div class="productos"></div>
+           </section>
+
+           <section class="clientes">
+                <h3>Reseñas de nuetros clientes</h3>
+
+                <div class="reseñas">
+                    <article class="tarjeta-reseña">
+                        <h4>Sofía L.:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repellat quisquam provident soluta necessitatibus quidem veritatis 
+                            magnam pariatur! Odit, expedita quia?</p>
+                    </article>
+                    <article class="tarjeta-reseña">
+                        <h4>Tomás Z.:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum veritatis quis, similique nisi deserunt eius?</p>
+                    </article>
+                    <article class="tarjeta-reseña">
+                        <h4>Paula R.:</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            In itaque, eligendi quam dolores officia tenetur 
+                            aspernatur consequatur temporibus.</p>
+                    </article>
+                </div>
+
+           </section>
+        </main>
+        <footer>
+            <nav class="nav-list">
+                <ul>
+                    <li><i class="fa-brands fa-github"></i><a href="https://github.com/">Github</a></li>
+                    <li><i class="fa-brands fa-youtube"></i><a href="https://youtube.com/">Youtube</a></li>
+                </ul>
+            </nav>
+            <p>Contacto: ivanadiaz.v@gmail.com</p>
+            <p>© 2025 Mi sistio web. Todos los derechos reservados.</p>
+        </footer>
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,209 @@
+/* Hoja de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: ivory;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    /* background-color: rgb(160, 150, 223); */
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+/* header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/*
+.logo {
+    width: 200px;
+    height: 200px;
+    border: 8px double purple;
+    border-radius: 50%;
+    margin: 10px;
+} */
+
+header nav {
+    padding: 1rem;
+    /* margin-right: 2rem; */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav li {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer nav a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+main {
+    width: 90%;
+    flex: 1;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+main h2 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.parrafo-home {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.venta { 
+    width: 100%;
+}
+
+.venta h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tarjeta-producto {
+    background-color: rgb(148, 187, 233);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 30rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-producto h3 {
+    font-size: 2.5rem;
+}
+
+.tarjeta-producto p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tarjeta-producto img {
+    width: 280px;
+    height: 280px;
+    border-radius: 0.5rem;
+}
+
+.clientes h3 {
+    font-size: 2.8rem;
+    margin: 3rem 0 2rem;
+    text-align: center;
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.tarjeta-reseña {
+    padding: 1rem;
+    border: 0.5rem solid rgba(238, 174, 202, 1);
+    box-shadow: 10px 5px 5px lightblue;
+    transition: background-color 800ms linear;
+}
+
+.tarjeta-reseña:hover {
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+fieldset {
+    padding: 0.5rem;
+}
+
+.mensajes caption {
+    font-size: 2rem;
+}
+
+.mensajes th, .mensajes td {
+    border: 0.2rem solid pink;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    header nav ul, footer {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .reseñas {
+        grid-template-columns: 1fr;
+    }
+}
