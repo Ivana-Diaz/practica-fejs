@@ -25,14 +25,17 @@ const renderizarCarrito = () => {
         tarjeta.classList.add("tarjeta-producto");
 
         const imagen = document.createElement("img");
-        imagen.src = `../${producto.imagen}`;
-        imagen.alt = producto.alt;
+        // imagen.src = `../${producto.imagen}`;
+        // imagen.alt = producto.alt;
+        imagen.src = producto.image;
 
         const titulo = document.createElement("h3");
-        titulo.textContent = producto.nombre;
+        // titulo.textContent = producto.nombre;
+        titulo.textContent = producto.title;
         
         const precio = document.createElement("p");
-        precio.textContent = `$${producto.precio}`;
+        // precio.textContent = `$${producto.precio}`;
+        precio.textContent = producto.price;
 
         const btnEliminar = document.createElement("button");
         btnEliminar.classList.add("btn");
