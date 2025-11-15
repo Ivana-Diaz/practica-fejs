@@ -221,7 +221,7 @@ fieldset {
     border-radius: 0.6rem;
 }
 
-.mensaje-carrito-vacio button {
+.btn-vaciar-carrito {
     font-size: 3rem;
     text-align: center;
     margin-top: 4rem;
