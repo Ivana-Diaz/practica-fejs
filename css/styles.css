@@ -208,7 +208,7 @@ fieldset {
     padding: 0.5rem;
 }
 
-.acciones-carrito {
+.btn-vaciar-carrito {
     margin-top: 2rem;
     font-family: "Outfit", sans-serif;
     border: none;
@@ -221,7 +221,7 @@ fieldset {
     border-radius: 0.6rem;
 }
 
-.btn-vaciar-carrito {
+.mensaje-carrito-vacio {
     font-size: 3rem;
     text-align: center;
     margin-top: 4rem;
