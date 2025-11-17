@@ -227,6 +227,13 @@ fieldset {
     margin-top: 4rem;
 }
 
+.resumen-carrito p {
+    font-size: 2rem;
+    border: 1rem solid pink;
+    padding: 2rem;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     header nav ul, footer {
         flex-direction: column;
