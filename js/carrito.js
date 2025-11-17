@@ -8,9 +8,14 @@ const renderizarCarrito = () => {
 
     const contenedor = document.getElementById("contenedor-carrito");
     const divAcciones = document.getElementById("acciones-carrito");
+    const resumen = document.getElementById("resumen-carrito");
 
     contenedor.innerHTML = "";
     divAcciones.innerHTML = "";
+    resumen.innerHTML = "";
+
+    let precios = [];
+
 
     if (!carrito.length) {
         const mensaje = document.createElement("p");
@@ -37,6 +42,8 @@ const renderizarCarrito = () => {
         // precio.textContent = `$${producto.precio}`;
         precio.textContent = producto.price;
 
+        precios.push(producto.price);
+
         const btnEliminar = document.createElement("button");
         btnEliminar.classList.add("btn");
         btnEliminar.classList.add("btn-eliminar-carrito");
@@ -54,6 +61,11 @@ const renderizarCarrito = () => {
 
         contenedor.appendChild(tarjeta);
     });
+
+    const contadorTotal = document.createElement("p");
+    const numeroTotal = precios.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    contadorTotal.textContent = `Total: ${numeroTotal}`;
+    resumen.appendChild(contadorTotal);
 
     const btnVaciar = document.createElement("button");
     btnVaciar.classList.add("btn");
