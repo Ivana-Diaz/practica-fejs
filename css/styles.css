@@ -208,6 +208,22 @@ fieldset {
     padding: 0.5rem;
 }
 
+#contenedor-carrito {
+    flex-direction: column;
+    width: 90%;
+}
+
+#contenedor-carrito .tarjeta-producto {
+    flex-direction: column;
+    width: auto;
+    gap: 3rem;
+}
+
+#contenedor-carrito img {
+    width: 4rem;
+    height: 4rem;
+}
+
 .btn-vaciar-carrito {
     margin-top: 2rem;
     font-family: "Outfit", sans-serif;
