@@ -40,7 +40,7 @@ const renderizarCarrito = () => {
         
         const precio = document.createElement("p");
         // precio.textContent = `$${producto.precio}`;
-        precio.textContent = `${producto.price}`;
+        precio.textContent = `$${producto.price}`;
 
         precios.push(producto.price);
 

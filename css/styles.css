@@ -214,14 +214,15 @@ fieldset {
 }
 
 #contenedor-carrito .tarjeta-producto {
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
-    gap: 3rem;
+    gap: 2rem;
+    justify-content: space-around;
 }
 
 #contenedor-carrito img {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .btn-vaciar-carrito {
